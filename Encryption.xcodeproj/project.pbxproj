@@ -15,6 +15,11 @@
 		37D575772077550600FA6E2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D575762077550600FA6E2F /* main.m */; };
 		37D575812077550600FA6E2F /* EncryptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D575802077550600FA6E2F /* EncryptionTests.m */; };
 		37D5758C2077550600FA6E2F /* EncryptionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D5758B2077550600FA6E2F /* EncryptionUITests.m */; };
+		37D5759B20775EDE00FA6E2F /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D5759A20775EDE00FA6E2F /* DetailVC.m */; };
+		37D575AB2077764500FA6E2F /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D575A62077764500FA6E2F /* GTMBase64.m */; };
+		37D575AC2077764500FA6E2F /* JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D575A92077764500FA6E2F /* JKEncrypt.m */; };
+		37D575AF207779EB00FA6E2F /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D575AE207779EB00FA6E2F /* RSA.m */; };
+		37D575B22078741D00FA6E2F /* NSString+WJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D575B12078741D00FA6E2F /* NSString+WJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 		37D575872077550600FA6E2F /* EncryptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D5758B2077550600FA6E2F /* EncryptionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptionUITests.m; sourceTree = "<group>"; };
 		37D5758D2077550600FA6E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D5759920775EDE00FA6E2F /* DetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
+		37D5759A20775EDE00FA6E2F /* DetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
+		37D575A52077764500FA6E2F /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		37D575A62077764500FA6E2F /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		37D575A72077764500FA6E2F /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		37D575A82077764500FA6E2F /* JKEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKEncrypt.h; sourceTree = "<group>"; };
+		37D575A92077764500FA6E2F /* JKEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKEncrypt.m; sourceTree = "<group>"; };
+		37D575AD207779EB00FA6E2F /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		37D575AE207779EB00FA6E2F /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		37D575B02078741D00FA6E2F /* NSString+WJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WJ.h"; sourceTree = "<group>"; };
+		37D575B12078741D00FA6E2F /* NSString+WJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WJ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +117,15 @@
 		37D575662077550600FA6E2F /* Encryption */ = {
 			isa = PBXGroup;
 			children = (
+				37D5759C2077731A00FA6E2F /* Third */,
 				37D575672077550600FA6E2F /* AppDelegate.h */,
 				37D575682077550600FA6E2F /* AppDelegate.m */,
+				37D575B02078741D00FA6E2F /* NSString+WJ.h */,
+				37D575B12078741D00FA6E2F /* NSString+WJ.m */,
 				37D5756A2077550600FA6E2F /* ViewController.h */,
 				37D5756B2077550600FA6E2F /* ViewController.m */,
+				37D5759920775EDE00FA6E2F /* DetailVC.h */,
+				37D5759A20775EDE00FA6E2F /* DetailVC.m */,
 				37D5756D2077550600FA6E2F /* Main.storyboard */,
 				37D575702077550600FA6E2F /* Assets.xcassets */,
 				37D575722077550600FA6E2F /* LaunchScreen.storyboard */,
@@ -130,6 +151,36 @@
 				37D5758D2077550600FA6E2F /* Info.plist */,
 			);
 			path = EncryptionUITests;
+			sourceTree = "<group>";
+		};
+		37D5759C2077731A00FA6E2F /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				37D575A42077764500FA6E2F /* 3des */,
+				37D575AA2077764500FA6E2F /* rsa */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		37D575A42077764500FA6E2F /* 3des */ = {
+			isa = PBXGroup;
+			children = (
+				37D575A52077764500FA6E2F /* GTMBase64.h */,
+				37D575A62077764500FA6E2F /* GTMBase64.m */,
+				37D575A72077764500FA6E2F /* GTMDefines.h */,
+				37D575A82077764500FA6E2F /* JKEncrypt.h */,
+				37D575A92077764500FA6E2F /* JKEncrypt.m */,
+			);
+			path = 3des;
+			sourceTree = "<group>";
+		};
+		37D575AA2077764500FA6E2F /* rsa */ = {
+			isa = PBXGroup;
+			children = (
+				37D575AD207779EB00FA6E2F /* RSA.h */,
+				37D575AE207779EB00FA6E2F /* RSA.m */,
+			);
+			path = rsa;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37D575AF207779EB00FA6E2F /* RSA.m in Sources */,
 				37D5756C2077550600FA6E2F /* ViewController.m in Sources */,
+				37D5759B20775EDE00FA6E2F /* DetailVC.m in Sources */,
+				37D575AC2077764500FA6E2F /* JKEncrypt.m in Sources */,
+				37D575B22078741D00FA6E2F /* NSString+WJ.m in Sources */,
+				37D575AB2077764500FA6E2F /* GTMBase64.m in Sources */,
 				37D575772077550600FA6E2F /* main.m in Sources */,
 				37D575692077550600FA6E2F /* AppDelegate.m in Sources */,
 			);
